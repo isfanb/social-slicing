@@ -1,0 +1,110 @@
+.input-find {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em 10em 1em 1em;
+}
+
+.header-btn {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em 3em;
+}
+
+.header-find, .header-upload {
+    position: relative;
+}
+
+.header-user {
+    display: flex;
+}
+
+.header-username {
+    margin-left: 5px;
+}
+.icon-tabler-search {
+    position: absolute;
+    left: 18em;
+    top: .5em;
+}
+
+.icon-tabler-upload {
+    position: absolute;
+    left: 15px;
+    top: .5em;
+}
+
+.icon-tabler-user-circle {
+    background-color: white;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+@media screen and (max-width: 1100px) {
+    .header-container {
+        display:block;
+    }
+
+    .header-container > h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sub-header {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sub-header {
+        display: block;
+    }
+
+    .header-find {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .header-user {
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .header-upload {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .input-find {
+        padding: 1em 6em 1em 1em;
+    }
+    
+    .icon-tabler-search {
+        left: 14em;
+    }
+}

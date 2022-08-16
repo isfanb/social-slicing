@@ -1,0 +1,32 @@
+.mv-img {
+    background-color: #fff;
+    padding: 2em;
+    color: black;
+    margin-right: 1em;
+}
+.mv-side-content {
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.mv-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mv-message {
+    margin: .2em 0;
+}
+
+.mv-react {
+    position: relative;
+}
+
+.mv-time {
+    margin-left: 1.5em;
+}
+
+.icon-tabler-message {
+    position: absolute;
+}

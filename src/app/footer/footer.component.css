@@ -1,0 +1,26 @@
+img {
+    margin: 2em .3em;
+    padding: .5em;
+    background-color: white;
+}
+
+ul {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.ul {
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 5em;
+}
+
+p {
+    margin: 3em 0 1em 0;
+}

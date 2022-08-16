@@ -1,0 +1,149 @@
+.container-main-videos {
+    display: flex;
+    margin-top: 5em;
+}
+
+app-side-channels {
+    width: 35%;
+}
+
+.mv-left {
+    width: 60%;
+    margin-right: 5em;
+}
+
+#mv-leftId {
+    margin: 5em 0;
+}
+
+.mv-creator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-content {
+    display: grid;
+    grid-template-areas: 'main main aside-one'
+    'main main aside-two'
+    'footer-one footer-two footer-three'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 20em 1em 1em 1em;
+    color: #000;
+}
+
+.aside-one {
+    grid-area: aside-one;
+    background-color: white;
+    padding: 10em 1em 1em 1em;
+    color: #000;
+}
+
+.aside-two {
+    grid-area: aside-two;
+    background-color: white;
+    padding: 10em 1em 1em 1em;
+    color: #000;
+}
+
+.footer-one {
+    grid-area: footer-one;
+    background-color: white;
+    padding: 10em 1em 1em 1em;
+    color: #000;
+}
+
+.footer-two {
+    grid-area: footer-two;
+    background-color: white;
+    padding: 10em 1em 1em 1em;
+    color: #000;
+}
+
+.footer-three {
+    grid-area: footer-three;
+    border: 2px solid #fff;
+    padding: 5em 1em 1em 1em;
+    color: #fff;
+}
+
+.mv-creator-own {
+    position: relative;
+}
+
+.icon-tabler-video-plus {
+    position: absolute;
+}
+
+.mv-creator-upload {
+    position: absolute;
+    left: 5em;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-main-videos {
+        display: block;
+    }
+
+    .mv-left {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mv-left {
+        width: 100%;
+    }
+
+    .mv-content {
+        display: grid;
+        grid-template-areas: 'main main main'
+        'aside-one aside-one aside-one'
+        'aside-two aside-two aside-two'
+        'footer-one footer-one footer-one'
+        'footer-two footer-two footer-two'
+        'footer-three footer-three footer-three'
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .aside-one, .aside-two {
+        padding: 23em 1em 1em 1em;
+    }
+
+    .footer-three {
+        padding: 2em;
+    }
+
+    .icon-tabler-video-plus {
+        position: static;
+    }
+
+    .mv-creator-upload {
+        line-height: 44px;
+        position: static;
+    }
+
+    .mv-creator-own {
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+}
